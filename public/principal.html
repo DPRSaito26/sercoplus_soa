@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Página de Productos - Estilo Sercoplus</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="principal.css"
+    />
+  </head>
+
+  <body>
+     <!-- Barra superior con logo y buscador -->
+  <div class="top-bar d-flex align-items-center justify-content-between">
+    <img src="corporacion-sercoplus-logo-1632849710.jpg" alt="Logo SERCOPLUS" class="logo-img">
+    <input class="form-control w-50 mx-3" type="search" placeholder="Buscar en catálogo">
+    <div>
+      <button class="btn btn-outline-secondary me-2">Iniciar Sesión</button>
+      <button class="btn btn-warning">🛒</button>
+    </div>
+  </div>
+
+  <!-- Barra de navegación inferior centrada -->
+  <nav class="navbar navbar-expand-lg navbar-dark py-2 shadow-sm">
+    <div class="container justify-content-center">
+      <ul class="navbar-nav gap-4">
+        <li class="nav-item"><a class="nav-link text-white" href="#">PC Powered</a></li>
+        <li class="nav-item"><a class="nav-link text-white" href="#">Laptops</a></li>
+        <li class="nav-item"><a class="nav-link text-white" href="#">Marcas</a></li>
+        <li class="nav-item"><a class="nav-link text-white" href="#">Medios de Pago</a></li>
+        <li class="nav-item"><a class="nav-link text-white" href="#">Términos</a></li>
+      </ul>
+    </div>
+  </nav>
+    <!-- Carrusel -->
+    <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="banner1.jpg" class="d-block w-100 carousel-img" alt="Producto destacado 1" />
+        </div>
+        <div class="carousel-item">
+          <img src="banner2.png" class="d-block w-100 carousel-img" alt="Producto destacado 2" />
+        </div>
+        <div class="carousel-item">
+          <img src="banner3.png" class="d-block w-100 carousel-img" alt="Producto destacado 3" />
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon"></span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+        <span class="carousel-control-next-icon"></span>
+      </button>
+    </div>
+
+    <!-- Secciones de productos -->
+    <div class="container">
+     <!-- Sección Tarjetas Gráficas NVIDIA -->
+<div class="product-section">
+    <h2 class="mb-4">Tarjetas Gráficas NVIDIA</h2>
+    <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-5 g-3 section-animate">
+      
+      <!-- Producto 1: ZOTAC RTX 3060 -->
+      <div class="col">
+        <div class="card position-relative overflow-hidden">
+          <!-- Botón "Vista rápida" -->
+          <div class="quick-view" data-bs-toggle="modal" data-bs-target="#modalVgaZotacRtx3060" style="cursor:pointer;">
+            <i class="fas fa-eye"></i> <span>Vista rápida</span>
+          </div>
+          <img src="vga-zotac-geforce-nvidia-rtx-3060-twin-e.jpg" class="card-img-top" alt="NVIDIA RTX 3060" />
+          <div class="card-body">
+            <h5 class="card-title">VGA ZOTAC NVIDIA GEFORCE RTX 3060 TWIN EDGE 12GB GDDR6</h5>
+            <p class="card-text">$399.99</p>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Modal de ZOTAC RTX 3060 -->
+      <div class="modal fade" id="modalVgaZotacRtx3060" tabindex="-1" aria-labelledby="modalVgaZotacRtx3060Label" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="modalVgaZotacRtx3060Label">VGA ZOTAC NVIDIA GEFORCE RTX 3060 TWIN EDGE 12GB GDDR6</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+            </div>
+            <div class="modal-body">
+              <div class="row">
+                <div class="col-md-5">
+                  <img src="vga-zotac-geforce-nvidia-rtx-3060-twin-e.jpg" class="img-fluid" alt="NVIDIA RTX 3060" />
+                </div>
+                <div class="col-md-7">
+                  <p><strong>Precio:</strong> $399.99</p>
+                  <p><strong>Descripción:</strong> Tarjeta gráfica ZOTAC NVIDIA GEFORCE RTX 3060 TWIN EDGE, ideal para juegos de alta calidad y aplicaciones exigentes.</p>
+                  <p><strong>Memoria:</strong> 12GB GDDR6</p>
+                </div>
+              </div>
+            </div>
+            <div class="modal-footer">
+              <button class="btn btn-danger" data-bs-dismiss="modal">Cerrar</button>
+              <button class="btn btn-success">Agregar al carrito</button>
+            </div>
+          </div>
+        </div>
+      </div>
+  
+      <!-- Producto 2: ASUS RTX 3060 -->
+      <div class="col">
+        <div class="card position-relative overflow-hidden">
+          <!-- Botón "Vista rápida" -->
+          <div class="quick-view" data-bs-toggle="modal" data-bs-target="#modalVgaAsusRtx3060" style="cursor:pointer;">
+            <i class="fas fa-eye"></i> <span>Vista rápida</span>
+          </div>
+          <img src="vga-asus-geforce-nvidia-dual-rtx-3060-v2.jpg" class="card-img-top" alt="NVIDIA RTX 3060" />
+          <div class="card-body">
+            <h5 class="card-title">VGA ASUS DUAL GEFORCE RTX 3060 V2 OC 12GB GDDR6</h5>
+            <p class="card-text">$363.00</p>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Modal de ASUS RTX 3060 -->
+      <div class="modal fade" id="modalVgaAsusRtx3060" tabindex="-1" aria-labelledby="modalVgaAsusRtx3060Label" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="modalVgaAsusRtx3060Label">VGA ASUS DUAL GEFORCE RTX 3060 V2 OC 12GB GDDR6</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+            </div>
+            <div class="modal-body">
+              <div class="row">
+                <div class="col-md-5">
+                  <img src="vga-asus-geforce-nvidia-dual-rtx-3060-v2.jpg" class="img-fluid" alt="NVIDIA RTX 3060" />
+                </div>
+                <div class="col-md-7">
+                  <p><strong>Precio:</strong> $363.00</p>
+                  <p><strong>Descripción:</strong> Tarjeta gráfica ASUS DUAL GEFORCE RTX 3060 V2, con gran rendimiento para gaming y aplicaciones creativas.</p>
+                  <p><strong>Memoria:</strong> 12GB GDDR6</p>
+                </div>
+              </div>
+            </div>
+            <div class="modal-footer">
+              <button class="btn btn-danger" data-bs-dismiss="modal">Cerrar</button>
+              <button class="btn btn-success">Agregar al carrito</button>
+            </div>
+          </div>
+        </div>
+      </div>
+  
+      <!-- Continúa con más productos... -->
+    </div>
+  </div>
+  
+
+      <!-- Productos Nuevos -->
+      <div class="product-section">
+        <h2 class="mb-4">Productos Nuevos</h2>
+        <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-5 g-3 section-animate">
+          <div class="col">
+            <div class="card">
+              <img src="laptop-lenovo-thinkpad-l15-gen-4-r7-pro.jpg" class="card-img-top" alt="Producto nuevo tecnología" />
+              <div class="card-body">
+                <h5 class="card-title">LAPTOP LENOVO THINKPAD L15 GEN 4, R7 PRO 7730U, 16GB, SSD 512, 15.6"</h5>
+                <p class="card-text">$799.99</p>
+              </div>
+            </div>
+          </div>
+          <!-- ...repite para los otros 4 productos nuevos... -->
+        </div>
+      </div>
+
+      <!-- Laptops -->
+      <div class="product-section">
+        <h2 class="mb-4">Laptops</h2>
+        <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-5 g-3 section-animate">
+          <div class="col">
+            <div class="card">
+              <img src="laptop-deltron-inspiron-3250-intel-core.jpg" class="card-img-top" alt="Laptop HP Pavilion" />
+              <div class="card-body">
+                <h5 class="card-title">LAPTOP DELL INSPIRON 3520, INTEL CORE i7-1255U, 8GB DDR4, SSD 512GB, 15.6" FHD</h5>
+                <p class="card-text">$569.99</p>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card">
+              <img src="laptop-lenovo-v15-g4-amn-amd-ryzen-5-75.jpg" class="card-img-top" alt="Laptop ASUS TUF" />
+              <div class="card-body">
+                <h5 class="card-title">LAPTOP LENOVO V15 G4 AMN, AMD RYZEN 5 7520U, 16GB DDR5, SSD 512GB, 15.6" FHD</h5>
+                <p class="card-text">$440.99</p>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card">
+              <img src="laptop-gaming-hp-victus-15-fa0021la-int.jpg" class="card-img-top" alt="Laptop Lenovo IdeaPad" />
+              <div class="card-body">
+                <h5 class="card-title">LAPTOP GAMING HP Victus 15-fa0021la, Core i5-12450H, 8GB DDR4, SSD 512GB, RTX 3050, 15.6"</h5>
+                <p class="card-text">$752.00</p>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card">
+              <img src="laptop-lenovo-loq-15iax9-ci5-12450hx-2.jpg" class="card-img-top" alt="Laptop Acer Aspire" />
+              <div class="card-body">
+                <h5 class="card-title">LAPTOP LENOVO LOQ 15IAX9. Ci5-12450HX, 24GB DDR5, SSD 512GB, RTX 3050, 15.6" FHD</h5>
+                <p class="card-text">$799.99</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- PC Gaming -->
+      <div class="product-section">
+        <h2 class="mb-4">PC Gaming</h2>
+        <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-5 g-3 section-animate">
+          <!-- Agrega hasta 5 PCs gaming -->
+          <!-- Aquí solo 1 como ejemplo -->
+          <div class="col">
+            <div class="card">
+              <img src="pcgaming2.jpg" class="card-img-top" alt="PC Gaming AMD Ryzen" />
+              <div class="card-body">
+                <h5 class="card-title">PC Ryzen 7 RTX 4060</h5>
+                <p class="card-text">$1299.99</p>
+              </div>
+            </div>
+          </div>
+          <!-- Rellena los otros 4 PCs -->
+        </div>
+      </div>
+
+      <!-- Monitores Gaming -->
+      <div class="product-section">
+        <h2 class="mb-4">Monitores Gaming</h2>
+        <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-5 g-3 section-animate">
+          <div class="col">
+            <div class="card">
+              <img src="monitor2.jpg" class="card-img-top" alt="Monitor ASUS 165Hz" />
+              <div class="card-body">
+                <h5 class="card-title">ASUS 24'' 165Hz</h5>
+                <p class="card-text">$229.99</p>
+              </div>
+            </div>
+          </div>
+          <!-- Agrega monitor3, monitor4, monitor5 aquí -->
+        </div>
+      </div>
+    </div>
+
+
+<!--borrador-->
+    <!-- Contenedor de productos -->
+<div class="container py-4">
+    <h2 class="mb-4">Monitores Gaming</h2>
+    <div class="row row-cols-1 row-cols-md-4 g-4">
+  
+      <!-- Producto con modal -->
+      <div class="col">
+        <div class="card position-relative overflow-hidden">
+          <!-- Botón que activa el modal -->
+          <div class="quick-view" data-bs-toggle="modal" data-bs-target="#modalMonitor1" style="cursor:pointer;">
+            <i class="fas fa-eye"></i>
+            <span>Vista rápida</span>
+          </div>
+          <img src="laptop-deltron-inspiron-3250-intel-core.jpg" class="card-img-top" alt="Monitor 1">
+          <div class="card-body">
+            <h5 class="card-title">Acer Nitro 27" 165Hz</h5>
+            <p class="card-text">$249.99</p>
+          </div>
+        </div>
+      </div>
+  
+      <!-- Modal del producto -->
+      <div class="modal fade" id="modalMonitor1" tabindex="-1" aria-labelledby="modalMonitor1Label" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="modalMonitor1Label">Acer Nitro 27" 165Hz</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+            </div>
+            <div class="modal-body">
+              <div class="row">
+                <div class="col-md-5">
+                  <img src="laptop-deltron-inspiron-3250-intel-core.jpg" class="img-fluid" alt="Monitor 1">
+                </div>
+                <div class="col-md-7">
+                  <p><strong>Precio:</strong> $249.99</p>
+                  <p><strong>Descripción:</strong> Monitor gamer de 27 pulgadas con resolución Full HD, frecuencia de actualización de 165Hz y tecnología AMD FreeSync para una experiencia fluida y sin cortes.</p>
+                  <p><strong>Conectividad:</strong> HDMI, DisplayPort</p>
+                </div>
+              </div>
+            </div>
+            <div class="modal-footer">
+              <button class="btn btn-danger" data-bs-dismiss="modal">Cerrar</button>
+              <button class="btn btn-success">Agregar al carrito</button>
+            </div>
+          </div>
+        </div>
+      </div>
+  
+    </div>
+  </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
