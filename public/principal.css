@@ -85,7 +85,8 @@ body {
   
   /* Carrusel */
   .carousel-item img {
-    max-height: 400px;
+    max-height: 1425px; 
+    width: 566px;
     object-fit: cover;
     transition: transform 0.5s ease;
   }
