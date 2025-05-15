@@ -30,7 +30,13 @@ const Navbar = ({ onNavigate }) => (
           <a className="nav-link text-white" href="/mediosPago">Medios de Pago</a>
         </li>
         <li className="nav-item">
-          <a className="nav-link text-white" href="/terminos">Términos</a>
+          <button 
+            className="nav-link btn btn-link text-white" 
+            onClick={() => onNavigate('terminos')} 
+            style={{ textDecoration: 'none' }}
+          >
+            Terminos
+          </button>
         </li>
       </ul>
     </div>

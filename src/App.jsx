@@ -7,6 +7,7 @@ import LoginCard from './components/LoginCard';
 import Footer from './components/Footer';
 import Logo from './components/Logo';
 import Principal from './paginas/Principal'; // asegúrate de que esta ruta sea correcta
+import Terminos from './paginas/Terminos'; // asegúrate de que esta ruta sea correcta
 
 function App() {
   const [pagina, setPagina] = useState('login'); // 'principal' o 'login'
@@ -17,6 +18,7 @@ function App() {
       <Navbar onNavigate={setPagina} />
       {pagina === 'login' && <LoginCard />}
       {pagina === 'principal' && <Principal />}
+      {pagina === 'terminos' && <Terminos />}
       <Footer />
     </div>
   );
