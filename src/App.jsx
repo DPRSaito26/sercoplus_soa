@@ -8,6 +8,7 @@ import Footer from './components/Footer';
 import Logo from './components/Logo';
 import Principal from './paginas/Principal'; // asegúrate de que esta ruta sea correcta
 import Terminos from './paginas/Terminos'; // asegúrate de que esta ruta sea correcta
+import Medios from './paginas/Medios';
 
 function App() {
   const [pagina, setPagina] = useState('login'); // 'principal' o 'login'
@@ -19,6 +20,8 @@ function App() {
       {pagina === 'login' && <LoginCard />}
       {pagina === 'principal' && <Principal />}
       {pagina === 'terminos' && <Terminos />}
+      {pagina === 'medios' && <Medios />}
+
       <Footer />
     </div>
   );
