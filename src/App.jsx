@@ -15,14 +15,17 @@ function App() {
   const [pagina, setPagina] = useState('login'); // 'principal' o 'login'
 
   return (
-    <div>
+    <div className="App">
       <Logo />
       <Navbar onNavigate={setPagina} />
-      {pagina === 'login' && <LoginCard />}
-      {pagina === 'principal' && <Principal />}
-      {pagina === 'terminos' && <Terminos />}
-      {pagina === 'medios' && <Medios />}
-      {pagina === 'marcas' && <Marcas />}
+
+      <main>
+        {pagina === 'login' && <LoginCard />}
+        {pagina === 'principal' && <Principal />}
+        {pagina === 'terminos' && <Terminos />}
+        {pagina === 'medios' && <Medios />}
+        {pagina === 'marcas' && <Marcas />}
+      </main>
 
       <Footer />
     </div>

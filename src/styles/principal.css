@@ -71,17 +71,30 @@ body {
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
   }
   
-  /* Footer */
-  footer {
-    background-color: #ff9900;
-    color: white;
-    padding: 20px 0;
-  }
-  
-  .footer-text {
-    font-size: 14px;
-    text-align: center;
-  }
+ /* Footer */
+.footer {
+  background-color: #fe9808;
+  color: white;
+  padding: 8px 0; /* antes 12px */
+  font-size: 0.75rem; /* antes 0.85rem */
+  line-height: 1.2; /* reduce espacio vertical entre líneas */
+}
+
+.footer-text {
+  font-size: 12px; /* más pequeño aún */
+  margin-bottom: 4px; /* reduce separación entre textos */
+  text-align: center;
+}
+
+.footer-logo {
+  max-height: 40px;
+  margin-bottom: 8px;
+}
+
+.footer-list li {
+  margin-bottom: 4px; /* menos espacio entre ítems */
+}
+
   
   /* Carrusel */
   .carousel-item img {

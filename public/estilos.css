@@ -71,11 +71,19 @@ body {
 }
 
 /* Footer */
-footer {
+.footer {
   background-color: #ff9900;
   color: white;
-  padding: 20px 0;
+  margin-bottom: 0 !important;
+  padding-bottom: 10px;
+  padding: 12px 0; /* antes era 20px */
+  font-size: 0.85rem; /* opcional: reduce el tamaño del texto */
 }
+
+.footer {
+
+}
+
 
 .footer-text {
   font-size: 14px;
