@@ -13,7 +13,7 @@ import Medios from './paginas/Medios';
 import Marcas from './paginas/Marcas';
 
 function App() {
-  const [pagina, setPagina] = useState('login'); // 'principal' o 'login'
+  const [pagina, setPagina] = useState('principal'); // 'principal' o 'login'
 
   return (
     <div className="App">
