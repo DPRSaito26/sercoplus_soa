@@ -3,18 +3,22 @@ import '../styles/producto.css';
 
 const Producto = ({ id, nombre, precio, marca, referencia, stock, imagen }) => (
   <>
-    <div className="col">
+   <div className="col">
       <div className="card product-card h-100 shadow-sm rounded-4 border-0">
-        <div className="quick-view" data-bs-toggle="modal" data-bs-target={`#${id}`} style={{ cursor: 'pointer' }}>
+        <div className="image-container" style={{ position: 'relative' }}>
+          <img src={imagen} className="card-img-top product-img" alt={nombre} />
+        </div>
+        <div className="quick-view-outside" data-bs-toggle="modal" data-bs-target={`#${id}`} style={{ cursor: 'pointer' }}>
           <i className="bi bi-search"></i> <span>Vista rápida</span>
         </div>
-        <img src={imagen} className="card-img-top product-img" alt={nombre} />
         <div className="card-body text-center">
           <h5 className="card-title fw-bold">{nombre}</h5>
           <p className="card-text text-warning fw-semibold fs-5">{precio}</p>
         </div>
       </div>
     </div>
+
+
 
     {/* Modal */}
     <div className="modal fade" id={id} tabIndex="-1" aria-labelledby={id} aria-hidden="true">
