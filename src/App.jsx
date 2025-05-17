@@ -11,6 +11,7 @@ import Principal from './paginas/Principal'; // asegúrate de que esta ruta sea 
 import Terminos from './paginas/Terminos'; // asegúrate de que esta ruta sea correcta
 import Medios from './paginas/Medios';
 import Marcas from './paginas/Marcas';
+import Crud from './paginas/Crud';
 
 function App() {
   const [pagina, setPagina] = useState('principal'); // 'principal' o 'login'
@@ -26,6 +27,7 @@ function App() {
         {pagina === 'terminos' && <Terminos />}
         {pagina === 'medios' && <Medios />}
         {pagina === 'marcas' && <Marcas />}
+        {pagina === 'crud' && <Crud />}
       </main>
 
       <Footer />
