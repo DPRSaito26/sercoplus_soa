@@ -15,15 +15,6 @@ const Navbar = ({ onNavigate }) => (
           </button>
         </li>
         <li className="nav-item">
-          <button 
-            className="nav-link btn btn-link text-white" 
-            onClick={() => onNavigate('login')} 
-            style={{ textDecoration: 'none' }}
-          >
-            Login
-          </button>
-        </li>
-        <li className="nav-item">
             <button 
             className="nav-link btn btn-link text-white" 
             onClick={() => onNavigate('marcas')} 

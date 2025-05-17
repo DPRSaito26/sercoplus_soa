@@ -67,17 +67,14 @@ img {
   background: white;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 }
-html, body {
-  margin: 0;
-  padding: 0;
-  height: 100%;
-}
-#root {
-  display: flex;
-  flex-direction: column;
-  min-height: 100vh;
+/* publicidad */
+@media (max-width: 900px) {
+  .publicidad-lateral {
+    display: none !important;
+  }
 }
 
-.App {
-  flex: 1; /* El contenido ocupa todo el espacio restante */
+/*texto rojo*/
+.texto-rojo {
+  color: red;
 }
