@@ -9,7 +9,7 @@ const Footer = () => (
         {/* Columna 1: Logo y contacto */}
         <div className="col-md-4 mb-2">
           <img
-            src="/footersercoplus.png"
+            src="./img/footer/footersercoplus.PNG"
             alt="Logo SERCOPLUS"
             style={{ maxHeight: '40px', maxWidth: '160px', objectFit: 'contain' }}
             className="mb-2"
@@ -49,7 +49,7 @@ const Footer = () => (
             <li>&#187; Política de Envío</li>
             <li>&#187; Política de garantías</li>
           </ul>
-          <img src="/libro.png" alt="Libro de Reclamaciones" width="70" />
+          <img src="./img/footer/libro.png" alt="Libro de Reclamaciones" width="70" />
         </div>
 
       </div>
@@ -59,7 +59,7 @@ const Footer = () => (
       {/* Pie final */}
       <div className="d-flex justify-content-between align-items-center">
         <small>© 2025 Corporación Sercoplus SAC. Todos los derechos reservados</small>
-        <img src="/tarjetas.png" alt="Visa Mastercard Interbank BBVA BCP" height="22" />
+        <img src="./img/footer/tarjetas.png" alt="Visa Mastercard Interbank BBVA BCP" height="22" />
       </div>
     </div>
   </footer>
