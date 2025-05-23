@@ -76,7 +76,7 @@ function AppRoutes({ setTipoUsuario }) {
         <Route path="/graficos" element={<Graficos />} />
       </Route>
 
-      <Route path="*" element={<Navigate to="/login" replace />} />
+      <Route path="*" element={<Navigate to="/principal" replace />} />
     </Routes>
   );
 }
