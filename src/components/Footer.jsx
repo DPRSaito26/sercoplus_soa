@@ -22,9 +22,9 @@ const Footer = () => (
 
           <h6 className="mt-2">SÍGUENOS</h6>
           <div className="d-flex gap-2">
-            <img src="/facebook.png" alt="Facebook" width="20" />
-            <img src="/x.png" alt="X" width="20" />
-            <img src="/instagram.png" alt="Instagram" width="20" />
+            <img src="./img/footer/facebook.png" alt="Facebook" width="20" />
+            <img src="./img/footer/x.png" alt="X" width="20" />
+            <img src="./img/footer/instagram.png" alt="Instagram" width="20" />
           </div>
         </div>
 

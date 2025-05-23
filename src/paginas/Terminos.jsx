@@ -46,7 +46,7 @@ const TerminosYCondiciones = () => {
             onMouseLeave={e => (e.currentTarget.style.boxShadow = "0 2px 12px rgba(0,0,0,0.12)")}
           >
             <img
-              src="/publicidad1.png"
+              src="./img/publicidad/publicidad1.png"
               alt="Publicidad ejemplo 1"
               style={{
                 width: "100%",
@@ -77,7 +77,7 @@ const TerminosYCondiciones = () => {
             onMouseLeave={e => (e.currentTarget.style.boxShadow = "0 2px 12px rgba(0,0,0,0.12)")}
           >
             <img
-              src="/publicidad2.png"
+              src="./img/publicidad/publicidad2.png"
               alt="Publicidad ejemplo 2"
               style={{
                 width: "100%",
@@ -107,7 +107,7 @@ const TerminosYCondiciones = () => {
             onMouseLeave={e => (e.currentTarget.style.boxShadow = "0 2px 12px rgba(0,0,0,0.12)")}
           >
             <img
-              src="/publicidad3.png"
+              src="./img/publicidad/publicidad3.png"
               alt="Publicidad ejemplo 2"
               style={{
                 width: "100%",

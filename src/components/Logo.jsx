@@ -1,7 +1,6 @@
 import React, { useState } from 'react';
 import { useNavigate } from "react-router-dom";
 import { FaShoppingCart, FaUser } from "react-icons/fa";
-import { BsFileBarGraphFill } from "react-icons/bs";
 import Carrito from '../paginas/Carrito';
 
 const Logo = () => {
@@ -16,7 +15,7 @@ const Logo = () => {
     <div className="top-bar d-flex align-items-center justify-content-between p-3 bg-light position-relative">
       {/* Logo navegable */}
       <img 
-        src="corporacion-sercoplus-logo-1632849710.png" 
+        src="./img/logos/logosercoplus.png"
         alt="Logo SERCOPLUS" 
         className="logo-img" 
         style={{ height: '50px', cursor: 'pointer' }} 
@@ -33,8 +32,7 @@ const Logo = () => {
       {/*Botones de la derecha*/}
       <div className="d-flex align-items-center position-relative">
         {/*Botón de dashboard externo */}
-       
-
+      
         {/* Botón de login */}
         <button
           className="btn btn-outline-secondary me-2"

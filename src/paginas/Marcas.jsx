@@ -5,18 +5,18 @@ import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 
 const marcas = [
-  { id: 1, nombre: "ACER", imagen: "/marcas/acer.jpg", alt: "ACER" },
-  { id: 2, nombre: "AMD", imagen: "/marcas/amd.jpg", alt: "AMD" },
-  { id: 3, nombre: "ASUS", imagen: "/marcas/asus.jpg", alt: "ASUS" },
-  { id: 4, nombre: "CORSAIR", imagen: "/marcas/corsair.jpg", alt: "CORSAIR" },
-  { id: 5, nombre: "HP", imagen: "/marcas/hp.jpg", alt: "HP" },
-  { id: 6, nombre: "HYPERX", imagen: "/marcas/hyperx.jpg", alt: "HYPERX" },
-  { id: 7, nombre: "INTEL", imagen: "/marcas/intel.jpg", alt: "INTEL" },
-  { id: 8, nombre: "KINGSTON", imagen: "/marcas/kingston.jpg", alt: "KINGSTON" },
-  { id: 9, nombre: "LENOVO", imagen: "/marcas/lenovo.jpg", alt: "LENOVO" },
-  { id: 10, nombre: "LOGITECH", imagen: "/marcas/logitech.jpg", alt: "LOGITECH" },
-  { id: 11, nombre: "MSI", imagen: "/marcas/msi.jpg", alt: "MSI" },
-  { id: 12, nombre: "RAZER", imagen: "/marcas/razer.jpg", alt: "RAZER" },
+  { id: 1, nombre: "ACER", imagen: "./img/marcas/acer.jpg", alt: "ACER" },
+  { id: 2, nombre: "AMD", imagen: "./img/marcas/amd.jpg", alt: "AMD" },
+  { id: 3, nombre: "ASUS", imagen: "./img/marcas/asus.jpg", alt: "ASUS" },
+  { id: 4, nombre: "CORSAIR", imagen: "./img/marcas/corsair.jpg", alt: "CORSAIR" },
+  { id: 5, nombre: "HP", imagen: "./img/marcas/hp.jpg", alt: "HP" },
+  { id: 6, nombre: "HYPERX", imagen: "./img/marcas/hyperx.jpg", alt: "HYPERX" },
+  { id: 7, nombre: "INTEL", imagen: "./img/marcas/intel.jpg", alt: "INTEL" },
+  { id: 8, nombre: "KINGSTON", imagen: "./img/marcas/kingston.jpg", alt: "KINGSTON" },
+  { id: 9, nombre: "LENOVO", imagen: "./img/marcas/lenovo.jpg", alt: "LENOVO" },
+  { id: 10, nombre: "LOGITECH", imagen: "./img/marcas/logitech.jpg", alt: "LOGITECH" },
+  { id: 11, nombre: "MSI", imagen: "./img/marcas/msi.jpg", alt: "MSI" },
+  { id: 12, nombre: "RAZER", imagen: "./img/marcas/razer.jpg", alt: "RAZER" },
 ];
 
 const Marcas = () => {
