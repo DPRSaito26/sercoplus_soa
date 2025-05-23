@@ -1,0 +1,95 @@
+/* ... otros estilos ... */
+
+.card {
+  position: relative;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  border-radius: 12px; /* Bordes más redondeados para un look moderno */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08); /* Sombra suave para elevación */
+  overflow: hidden; /* Para que la imagen y el overlay respeten el border-radius */
+  transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out; /* Transición suave al hover */
+}
+
+.card:hover {
+  transform: translateY(-5px); /* Ligeramente hacia arriba al hacer hover */
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15); /* Sombra más pronunciada al hover */
+}
+
+.card-img-top {
+  height: 300px;
+  object-fit: cover;
+  transition: transform 0.3s ease-out; /* Zoom sutil al hover */
+}
+
+.card:hover .card-img-top {
+  transform: scale(1.05);
+}
+
+.image-container {
+  position: relative;
+  overflow: hidden; /* Asegura que el overlay esté dentro de los límites */
+}
+
+/* Estilos para el botón "Vista Rápida" fuera del image-container */
+.quick-view-outside {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(0, 123, 255, 0.8); /* Color de acento más vibrante */
+  color: white;
+  padding: 10px 20px; /* Más padding para un botón más prominente */
+  text-align: center;
+  font-size: 0.95rem; /* Ligeramente más grande */
+  border-radius: 8px; /* Más redondeado */
+  margin-top: 15px;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s ease-in-out, visibility 0.3s ease-in-out, transform 0.2s ease-in-out;
+}
+
+.quick-view-outside i {
+  margin-right: 8px;
+}
+
+.card:hover .quick-view-outside {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(-8px); /* Ligeramente hacia arriba al aparecer */
+}
+
+/* Opcional: Si quieres que aparezca al hacer hover en la imagen */
+/* .image-container:hover + .quick-view-outside {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(-8px);
+} */
+
+.card-body {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 1.25rem; /* Un poco más de espacio interior */
+}
+
+.card-title {
+  font-size: 1.1rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+  color: #333; /* Título más oscuro */
+}
+
+.card-text {
+  font-size: 0.9rem;
+  color: #666;
+  margin-bottom: 0.75rem;
+}
+
+.price {
+  font-size: 1rem;
+  font-weight: 500;
+  color: #007bff; /* Color de precio llamativo */
+}
+
+/* ... otros estilos ... */

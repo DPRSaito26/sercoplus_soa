@@ -1,0 +1,91 @@
+/* General */
+body {
+  background-color: #f4f4f4;
+}
+
+/* Logo */
+.logo-img {
+  height: 40px;
+  width: auto;
+  object-fit: contain;
+}
+
+/* Barra superior */
+.top-bar {
+  background-color: #ffffff;
+  padding: 10px 30px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Navbar */
+.navbar {
+  background-color: #ff9900;
+  animation: fadeInDown 0.6s ease;
+}
+
+/* Efecto de animación */
+@keyframes fadeInDown {
+  0% {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Efecto de hover en links */
+.nav-link {
+  position: relative;
+  transition: color 0.3s ease;
+}
+
+.nav-link::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 2px;
+  width: 0;
+  background-color: white;
+  transition: width 0.3s;
+}
+
+.nav-link:hover::after {
+  width: 100%;
+}
+
+.nav-link:hover {
+  color: #fffacd !important;
+}
+
+/* Tarjeta de login */
+.login-card {
+  max-width: 400px;
+  margin: 60px auto;
+  padding: 30px;
+  border-radius: 8px;
+  background: white;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* Footer */
+.footer {
+  background-color: #ff9900;
+  color: white;
+  margin-bottom: 0 !important;
+  padding-bottom: 10px;
+  padding: 12px 0; /* antes era 20px */
+  font-size: 0.85rem; /* opcional: reduce el tamaño del texto */
+}
+
+.footer {
+
+}
+
+
+.footer-text {
+  font-size: 14px;
+}
+

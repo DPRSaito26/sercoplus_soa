@@ -1,0 +1,20 @@
+.envio-card {
+  border-radius: 16px;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  min-height: 350px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.btn-confirmar {
+  background-color: #ff9900;
+  border-color: #ff9900;
+  color: white;
+}
+
+.btn-confirmar:hover {
+  background-color: #e68a00;
+  border-color: #e68a00;
+}

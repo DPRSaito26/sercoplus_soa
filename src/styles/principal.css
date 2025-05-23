@@ -1,0 +1,288 @@
+/* General */
+body {
+  background: linear-gradient(to bottom, #f4f4f4, #e0e0e0); /* Degradado de gris claro a un tono ligeramente más oscuro */
+  font-family: Arial, sans-serif;
+}
+
+/* Logo */
+.logo-img {
+  height: 40px;
+  width: auto;
+  object-fit: contain;
+}
+
+/* Barra superior */
+.top-bar {
+  background-color: #ffffff;
+  padding: 10px 30px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Navbar */
+.navbar {
+  background-color: #ff9900;
+  animation: fadeInDown 0.6s ease;
+}
+
+/* Efecto de animación */
+@keyframes fadeInDown {
+  0% {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Efecto de hover en links */
+.nav-link {
+  position: relative;
+  transition: color 0.3s ease;
+}
+
+.nav-link::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 2px;
+  width: 0;
+  background-color: white;
+  transition: width 0.3s;
+}
+
+.nav-link:hover::after {
+  width: 100%;
+}
+
+.nav-link:hover {
+  color: #fffacd !important;
+}
+
+/* Tarjeta de login */
+.login-card {
+  max-width: 600px;
+  margin: 60px auto;
+  padding: 30px;
+  border-radius: 8px;
+  background: white;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* Footer */
+.footer {
+  background-color: #fe9808;
+  color: white;
+  padding: 8px 0; /* antes 12px */
+  font-size: 0.75rem; /* antes 0.85rem */
+  line-height: 1.2; /* reduce espacio vertical entre líneas */
+}
+
+.footer-text {
+  font-size: 12px; /* más pequeño aún */
+  margin-bottom: 4px; /* reduce separación entre textos */
+  text-align: center;
+}
+
+.footer-logo {
+  max-height: 40px;
+  margin-bottom: 8px;
+}
+
+.footer-list li {
+  margin-bottom: 4px; /* menos espacio entre ítems */
+}
+
+/* Carrusel */
+.carousel-item img {
+  max-height: 1425px;
+  width: 566px;
+  object-fit: cover;
+  transition: transform 0.5s ease;
+}
+
+.carousel-item:hover img {
+  transform: scale(1.05);
+}
+
+/* Secciones de productos */
+.product-section {
+  margin-top: 30px;
+}
+
+.card:hover {
+  transform: scale(1.02);
+  transition: transform 0.3s;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.section-animate {
+  animation: fadeInUp 1s ease-in-out;
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Top bar */
+.top-bar .btn {
+  color: #343a40;
+}
+
+.top-bar .btn:hover {
+  background-color: #ff9900;
+  color: white;
+}
+
+.card {
+  position: relative; /* Añadido para que .quick-view se posicione bien */
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.card-img-top {
+  height: 250px;
+  object-fit: cover; /* Recorta o ajusta la imagen sin deformarla */
+}
+
+.card-body {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.card-title {
+  font-size: 1rem;
+  margin-bottom: 0.5rem;
+}
+
+.card-text {
+  font-weight: bold;
+  color: #333;
+}
+
+
+/* Scroll horizontal para secciones */
+.horizontal-scroll {
+  display: flex;
+  gap: 1rem;
+  overflow-x: auto;
+  padding-bottom: 0.5rem;
+  scroll-behavior: smooth;
+  -webkit-overflow-scrolling: touch;
+  margin: 0 30px; /* Ajusta según necesites */
+  /* Nueva propiedad para limitar el ancho visible */
+  max-width: calc(5 * (280px + 1rem)); /* Ejemplo: 5 productos de 280px de ancho + el gap */
+}
+
+.horizontal-scroll::-webkit-scrollbar {
+  height: 8px;
+}
+
+
+.horizontal-scroll::-webkit-scrollbar-thumb {
+    background-color: #aaa;
+    border-radius: 4px;
+}
+
+.horizontal-scroll::-webkit-scrollbar-track {
+    background: #f1f1f1;
+    border-radius: 4px;
+}
+/* Ajusta el ancho de .product-card si es necesario */
+.product-card {
+    width: 300px; /* Nuevo ancho de la tarjeta */
+    background-color: #fff; /* Fondo blanco para las tarjetas */
+    border-radius: 8px; /* Bordes redondeados para las tarjetas */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.08);
+    transition: box-shadow 0.2s ease-in-out;
+}
+
+/* Estilos para el contenedor de la sección con navegación */
+.product-section-with-nav {
+  position: relative; /* Para posicionar los botones absolutamente dentro */
+  margin-top: 30px;
+}
+
+/* Estilos generales para los botones de scroll */
+.scroll-button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: none;
+  border: none;
+  font-size: 1.8rem; /* Un poco más grande */
+  color: #555; /* Un gris más moderno */
+  cursor: pointer;
+  padding: 0.7rem;
+  z-index: 10;
+  transition: color 0.2s ease-in-out, transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+  border-radius: 8px; /* Más redondeado */
+  /* Efecto de relieve sutil */
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.05);
+}
+
+.scroll-button:hover {
+  color: #007bff; /* Un color de acento al hacer hover */
+  transform: translateY(-55%); /* Un poco más de elevación */
+  box-shadow: 3px 3px 8px rgba(0, 123, 255, 0.2); /* Sombra más pronunciada al hover */
+  background-color: rgba(0, 123, 255, 0.05); /* Ligero fondo de acento al hover */
+}
+
+/* Estilo para el botón izquierdo */
+.scroll-button.left {
+  left: 10px; /* Más cerca del borde */
+}
+
+/* Estilo para el botón derecho */
+.scroll-button.right {
+  right: 10px; /* Más cerca del borde */
+}
+
+/* Ajusta el contenedor del scroll horizontal para dejar espacio a los botones */
+.horizontal-scroll {
+  display: flex;
+  gap: 20px; /* Más espacio entre productos */
+  overflow-x: auto;
+  padding-bottom: 1rem; /* Más espacio inferior */
+  scroll-behavior: smooth;
+  -webkit-overflow-scrolling: touch;
+  margin: 0 20px; /* Menos margen lateral */
+  border-radius: 10px; /* Bordes redondeados para el contenedor */
+  /* Sombra interior sutil para dar profundidad */
+  box-shadow: inset 0 2px 5px rgba(0, 0, 0, 0.03);
+  background-color: #f9f9f9; /* Fondo ligeramente grisáceo */
+}
+
+.horizontal-scroll::-webkit-scrollbar {
+  height: 8px; /* Scrollbar más visible */
+}
+
+.horizontal-scroll::-webkit-scrollbar-thumb {
+  background-color: #aaa;
+  border-radius: 5px;
+  /* Sombra en el thumb */
+  box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.2);
+}
+
+.horizontal-scroll::-webkit-scrollbar-track {
+  background: #eee;
+  border-radius: 5px;
+}
+
+.product-card:hover {
+  box-shadow: 0 8px 18px rgba(0, 0, 0, 0.18); /* Sombra más intensa al hover de la tarjeta */
+  transform: scale(1.02); /* Ligeramente más grande al hover */
+  transition: box-shadow 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
