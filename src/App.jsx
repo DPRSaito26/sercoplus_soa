@@ -46,8 +46,7 @@ function AppRoutes({ setTipoUsuario }) {
 
   return (
     <Routes>
-      <Route path="/login" element={<LoginCard onRegisterClick={() => navigate("/registro")} onLoginSuccess={handleLoginSuccess} />} />
-      <Route path="/registro" element={<RegisterCard onLoginClick={() => navigate('/login')} />} />
+
 
       {/* Cliente */}
       <Route element={<LayoutCliente />}>
@@ -57,7 +56,9 @@ function AppRoutes({ setTipoUsuario }) {
         <Route path="/marcas" element={<Marcas />} />
         <Route path="/carrito" element={<Carrito />} />
         <Route path="/pago" element={<PagoCard />} />
-        <Route path="/envio" element={<EnvioCard />} />        
+        <Route path="/envio" element={<EnvioCard />} />  
+        <Route path="/login" element={<LoginCard onRegisterClick={() => navigate("/registro")} onLoginSuccess={handleLoginSuccess} />} />   
+        <Route path="/registro" element={<RegisterCard onLoginClick={() => navigate('/login')} />} />
       </Route>
 
       {/* Dashboard */}
