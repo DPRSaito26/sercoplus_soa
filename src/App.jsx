@@ -30,6 +30,10 @@ import Detalles from './paginas/Detalles';
 import FAQ from './paginas/FAQ';
 import Graficos from './paginas/Graficos';
 
+import { ToastContainer } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
+
+
 function AppRoutes({ setTipoUsuario }) {
   const navigate = useNavigate();
 
@@ -88,7 +92,8 @@ function App() {
   return (
     <AuthProvider>
       <CarritoProvider>
-        <AppRoutes setTipoUsuario={setTipoUsuario} />
+          <AppRoutes setTipoUsuario={setTipoUsuario} />
+          <ToastContainer position="top-right" autoClose={1000} hideProgressBar={false} />
       </CarritoProvider>
     </AuthProvider>
   );

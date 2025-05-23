@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import '../styles/producto.css';
 import { useCarrito } from '../context/CarritoContext';
+import { toast } from 'react-toastify';
 
 const extraerPrecioNumero = (precioStr) => {
   if (typeof precioStr !== 'string') {
@@ -16,7 +17,7 @@ const Producto = ({ id, nombre, precio, marca, referencia, stock, imagen }) => {
 
   const handleAgregar = () => {
     if (stock <= 0) {
-      alert('Lo sentimos, este producto no tiene stock disponible.');
+      toast.error('Lo sentimos, este producto no tiene stock disponible.');
       return;
     }
 
@@ -33,7 +34,8 @@ const Producto = ({ id, nombre, precio, marca, referencia, stock, imagen }) => {
     };
 
     agregarAlCarrito(producto);
-    setShowModal(false); // Cerramos modal controlado por React
+    toast.success('¡Se añadió correctamente su producto al carrito!');
+    setShowModal(false);
   };
 
   return (
@@ -57,17 +59,14 @@ const Producto = ({ id, nombre, precio, marca, referencia, stock, imagen }) => {
         </div>
       </div>
 
-      {/* Modal controlado con React */}
       {showModal && (
         <>
-          {/* Backdrop */}
           <div
             className="modal-backdrop fade show"
             style={{ position: 'fixed', top: 0, left: 0, width: '100vw', height: '100vh', backgroundColor: 'rgba(0,0,0,0.5)', zIndex: 1040 }}
             onClick={() => setShowModal(false)}
           ></div>
 
-          {/* Modal */}
           <div
             className="modal d-block fade show"
             tabIndex="-1"

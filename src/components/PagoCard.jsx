@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import '../styles/PagoCard.css';
 import { useCarrito } from '../context/CarritoContext';
+import { toast } from 'react-toastify';
 
 const PagoCard = () => {
   const { carrito } = useCarrito();
@@ -26,10 +27,10 @@ const PagoCard = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
     if (!form.aceptoTerminos) {
-      alert('Debes aceptar los términos y condiciones.');
+      toast.error('Debes aceptar los términos y condiciones.');
       return;
     }
-    alert('Procesando pago...');
+    toast.success('Procesando pago...');
   };
 
   const calcularTotal = () => {
@@ -76,7 +77,7 @@ const PagoCard = () => {
               <button
                 type="button"
                 className="link-button"
-                onClick={() => alert('Mostrar términos y condiciones')}
+                onClick={() => toast.info('Mostrar términos y condiciones')}
               >
                 términos y condiciones
               </button>{' '}
@@ -84,7 +85,7 @@ const PagoCard = () => {
               <button
                 type="button"
                 className="link-button"
-                onClick={() => alert('Mostrar política de privacidad')}
+                onClick={() => toast.info('Mostrar política de privacidad')}
               >
                 política de privacidad
               </button>.
