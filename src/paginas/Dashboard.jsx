@@ -2,8 +2,7 @@ import React, { useEffect } from "react";
 import styled from "styled-components";
 import scrollreveal from "scrollreveal";
 
-// Componentes del dashboard
-import NavbarDashboard from "../components/NavbarDashboard";
+import NavbarDashboard from "../components/NavbarDashboard"; // 👈 Aquí va
 import Analytics from "./Analytics";
 import Earnings from "./Earnings";
 import FAQ from "./FAQ";
@@ -33,6 +32,7 @@ export default function Dashboard() {
 
   return (
     <Section>
+      <NavbarDashboard /> {/* 👈 Se muestra solo aquí */}
       <div className="grid">
         <div className="row__one">
           <Analytics />
@@ -52,19 +52,19 @@ export default function Dashboard() {
 const Section = styled.section`
   margin-left: 18vw;
   padding: 2rem;
-  height: 100%;
+  min-height: 100vh;
+  background-color: #0f0f0f;
+  color: white;
 
   .grid {
     display: flex;
     flex-direction: column;
-    height: 100%;
     gap: 1rem;
     margin-top: 2rem;
 
     .row__one {
       display: grid;
       grid-template-columns: repeat(2, 1fr);
-      height: 50%;
       gap: 1rem;
     }
 
@@ -72,11 +72,10 @@ const Section = styled.section`
       display: grid;
       grid-template-columns: repeat(3, 1fr);
       gap: 1rem;
-      height: 50%;
     }
   }
 
-  @media screen and (min-width: 280px) and (max-width: 1080px) {
+  @media screen and (max-width: 1080px) {
     margin-left: 0;
 
     .grid {
